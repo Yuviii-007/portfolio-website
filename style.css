@@ -13,8 +13,6 @@ body{
     overflow-x: hidden;
 }
 
-
-
 :root {
     --bg0range: #e84949;
 }
@@ -28,14 +26,12 @@ body{
 .container {
     width: 1200px;
     margin: 0 auto;
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding-top: 1rem;
 }
 
@@ -52,9 +48,7 @@ body{
 .logo-text {
     margin: -1.2rem;
     font-weight: 500;
-
 }
-
 
 .nav-items {
     display: flex;
@@ -70,7 +64,6 @@ body{
 
 .nav-items div a {
     color: black;
-
 }
 
 a {
@@ -80,7 +73,6 @@ a {
 .nav-items div:hover {
     font-weight: bold;
     transition: 0.8s;
-
 }
 
 .hero-section {
@@ -88,12 +80,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 5rem;
     margin: 4rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
-
 }
 
 .faded-text {
@@ -101,14 +91,10 @@ a {
     user-select: none;
     font-size: 7em;
     color: rgb(231, 231, 231);
-
     bottom: 10%;
-    /*    yaha pr bhaiya ne negative position use ki hai  */
     left: 5%;
-    /*    yaha pr bhaiya ne negative position use ki hai  */
     font-weight: bold;
     transition: all 3s;
-
 }
 
 .hero-section-left {
@@ -116,7 +102,6 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-
 }
 
 .hero-section-heading {
@@ -135,13 +120,11 @@ a {
     line-height: 45px;
 }
 
-
 .hero-section-description {
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
 }
-
 
 .btn-pink {
     background-color: #e84949;
@@ -161,7 +144,6 @@ a {
 .userrr{
     width: 300px;
     height: 300px;
-
 }
 
 .btn-pink::before {
@@ -209,18 +191,15 @@ a {
 }
 
 @keyframes scaleImage {
-
     0% {
         filter: grayscale(0);
         transform: scale(1);
     }
-
     50% {
         filter: grayscale(1);
         transform: scale(1.1);
         box-shadow: 3px 3px 10px black;
     }
-
     100% {
         filter: grayscale(0);
         transform: scale(1);
@@ -231,92 +210,59 @@ a {
     z-index: 9;
     bottom: -1rem;
     right: 0;
-    animation: dotAnimation;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation: dotAnimation infinite 5s;
 }
 
 @keyframes dotAnimation {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
 
 .icon-cube {
     z-index: 9;
     top: -0.8em;
     right: 1em;
-    animation-name: cubeAnimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
+    animation: cubeAnimation infinite 5s;
 }
 
 @keyframes cubeAnimation {
-    0% {
-        transform: rotateY(0deg) translateY(0);
-    }
-
-    50% {
-        transform: rotateY(180deg) translateY(-12px);
-    }
-
-    100% {
-        transform: rotateY(360deg) translateY(0);
-    }
+    0% { transform: rotateY(0deg) translateY(0); }
+    50% { transform: rotateY(180deg) translateY(-12px); }
+    100% { transform: rotateY(360deg) translateY(0); }
 }
 
 .icon-circle {
     z-index: 9;
     bottom: 0;
     left: 0;
-    animation-name: shakeEffect;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: shakeEffect linear infinite 5s;
 }
 
 @keyframes shakeEffect {
-    50% {
-        bottom: 10%;
-        left: 5%;
-    }
+    50% { bottom: 10%; left: 5%; }
 }
 
 .icon-zigzag {
     z-index: 9;
     top: 1.5em;
     left: -0.3em;
-    animation: zigzagAnimation 5s ease-in infinite;
+    animation: zigzagAnimation ease-in infinite 5s;
 }
 
 @keyframes zigzagAnimation {
-    50% {
-        top: 2%;
-        left: 5%;
-    }
+    50% { top: 2%; left: 5%; }
 }
 
 .icon-plus {
     z-index: 9;
     top: -0.8rem;
     left: 50%;
-    animation: shakeEffectPlus 5s ease-in infinite;
+    animation: shakeEffectPlus ease-in infinite 5s;
 }
 
 @keyframes shakeEffectPlus {
-    50% {
-        top: 3%;
-        left: 48%;
-    }
+    50% { top: 3%; left: 48%; }
 }
 
 .project-section {
@@ -335,7 +281,6 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 0;
-
     display: flex;
     flex-direction: column;
     gap: 120px;
@@ -344,15 +289,12 @@ a {
 .project-card {
     width: 90%;
     height: 550px;
-    background-image: url(./images/Project/Project1.png);
     background-size: cover;
-
     position: relative;
     box-shadow: 0px 0px 40px #1f1f1f;
 }
 
 .project-card::after {
-    /*create a modern css wala lecture dekh skte hai ise smjhne ke liye*/
     content: "";
     position: absolute;
     top: 0;
@@ -376,7 +318,6 @@ a {
     transition: all 0.4s;
     transform: scaleX(0);
     z-index: 1;
-
 }
 
 .project-card:hover::before {
@@ -431,12 +372,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-   
 }
 
 .project-skill {
     width: 40px;
-    
 }
 
 .project-heading {
@@ -475,7 +414,6 @@ a {
 .project-card:hover .project-content {
     transform: scale(1.1);
 }
-
 
 #project1 {
     background-image: url(./images/Project/Project1.png);
@@ -549,7 +487,6 @@ a {
     width: 90px;
     /*video- 16.04  */
     transition: all 0.5s;
-
 }
 
 .skills-logo:hover {
@@ -571,7 +508,6 @@ a {
     text-align: justify;
     width: 85%;
     margin-top: 1rem;
-
 }
 
 .skill-subHeading p {
@@ -600,7 +536,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .form{
@@ -616,16 +551,15 @@ a {
 }
 
 .formfield{
-width: 100%;
-height: 42px;
-padding: 0 2rem;
-font-size: 18px;
-border-radius: 5px;
-border: none;
-box-shadow: 2px 2px 10px black;
-margin-top: 27px;
-font-weight: 500;
-
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 27px;
+    font-weight: 500;
 }
 
 .formfield-textarea{
@@ -661,7 +595,6 @@ footer{
     align-items: center;
     gap: 1rem;
     padding: 1.2rem;
-
 }
 
 .footer-faded-text{
@@ -671,7 +604,6 @@ footer{
     user-select: none;
     color: #535c87;
     font-size: 5em;
-
 }
 
 .link-wrapper{
@@ -685,7 +617,6 @@ footer{
     transition: all 0.6s;
 }
 
-
 .link-wrapper div a:hover{
     color: var(--bg0range);
 }
@@ -693,4 +624,221 @@ footer{
 .icon-wrapper{
     display: flex;
     gap: 1rem;
+}
+
+/* Responsive CSS */
+
+/* For tablets and smaller screens */
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-items {
+        padding: 0;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem auto;
+        padding-bottom: 4rem;
+    }
+
+    .faded-text {
+        font-size: 4em;
+        bottom: 5%;
+        left: 2%;
+    }
+
+    .hero-section-description {
+        width: 100%;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .hero-section-heading {
+        font-size: 28px;
+    }
+
+    .btn-pink {
+        font-size: 16px;
+        padding: 0.6rem 2rem;
+    }
+
+    .user-image {
+        width: 250px;
+        height: 280px;
+        padding: 1.5rem;
+    }
+
+    .project-container {
+        gap: 60px;
+        padding: 2rem 0;
+    }
+
+    .project-card {
+        height: 400px;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .project-number {
+        font-size: 120px;
+    }
+
+    .project-content-left, .project-content-right {
+        left: 5% !important;
+        right: 5% !important;
+        bottom: 15%;
+    }
+
+    .project-skills-container {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        padding: 2rem;
+        margin: 5rem auto;
+        gap: 20px;
+    }
+
+    .skill-container-left, .skill-container-right {
+        width: 100%;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .skill-fade-text {
+        font-size: 8em;
+        bottom: -20%;
+        right: -10%;
+    }
+
+    .skill-heading {
+        font-size: 36px;
+    }
+
+    .caps {
+        font-size: 60px;
+    }
+
+    .skills-logo {
+        width: 70px;
+    }
+
+    .contactus-heading {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .contactus-sub-heading {
+        font-size: 2rem;
+    }
+
+    .form {
+        width: 90%;
+        margin: 1rem auto;
+        gap: 20px;
+    }
+
+    footer .footer-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-faded-text {
+        font-size: 3em;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .nav-items {
+        gap: 0.8rem;
+        font-size: 16px;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .hero-section-heading {
+        font-size: 22px;
+    }
+
+    .btn-pink {
+        font-size: 14px;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .user-image {
+        width: 200px;
+        height: 230px;
+        padding: 1rem;
+    }
+
+    .project-number {
+        font-size: 90px;
+    }
+
+    .project-heading {
+        font-size: 32px;
+    }
+
+    .project-subHeading {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .skills-container {
+        padding: 1rem;
+        margin: 3rem auto;
+        gap: 15px;
+    }
+
+    .skill-heading {
+        font-size: 28px;
+    }
+
+    .caps {
+        font-size: 40px;
+    }
+
+    .skills-logo {
+        width: 60px;
+    }
+
+    .contactus-heading {
+        font-size: 2rem;
+    }
+
+    .contactus-sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .form {
+        width: 95%;
+        margin: 1rem auto;
+        gap: 15
+    }
 }
